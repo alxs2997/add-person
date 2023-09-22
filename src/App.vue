@@ -11,6 +11,7 @@
         <tabla-personas
           :personas="personas"
           @delete-persona="eliminarPersona"
+          @actualizar-persona="actualizarPersona"
         />
       </div>
     </div>
@@ -64,8 +65,12 @@ export default {
     eliminarPersona(id) {
       this.personas = this.personas.filter((persona) => persona.id !== id);
     },
+    actualizarPersona(id, personaActualizada) {
+      this.personas = this.personas.map((persona) =>
+        persona.id === id ? personaActualizada : persona
+      );
     },
-    //aqui se puede agregar un metodo para editar persona
+  },
 };
 </script>
 
@@ -87,5 +92,6 @@ button {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 1.5rem;
+  font-weight: bold;
 }
 </style>
