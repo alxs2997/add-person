@@ -189,7 +189,7 @@ export default {
   padding: 24px;
   width: 768px;
   max-width: 100%;
-  border: 1.5px solid #e6e6e6;
+  border: .5px solid rgb(190, 190, 190);
   box-shadow: 0px 4px 16px 0px rgba(148, 156, 169, 0.15);
   text-align: left;
 }
