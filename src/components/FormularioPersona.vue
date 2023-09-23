@@ -57,10 +57,10 @@
     <div class="row">
       <div class="col-md-12">
         <div v-if="error && procesando" class="alert alert-danger" role="alert">
-          Debes rellenar todos los campos!
+          <i class='bx bx-info-circle'></i> ATENCIÓN: Debes rellenar todos los campos!
         </div>
         <div v-if="correcto" class="alert alert-success" role="alert">
-          La persona ha sido agregada correctamente!
+          <i class='bx bx-user-check'></i> La persona ha sido agregada correctamente!
         </div>
       </div>
     </div>
