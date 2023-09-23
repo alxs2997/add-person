@@ -2,7 +2,7 @@
   <div id="app" class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="title">Lista de Empleados</h1>
+        <h1 class="title">Añadir Empleados</h1>
       </div>
     </div>
     <div class="row">
@@ -77,15 +77,36 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Josefin+Sans:wght@200&family=Titillium+Web:wght@400;700&display=swap");
 
+:root {
+    --background: #ECECF4;
+    --table-background: #FCFCFD;
+    --primary: #272727;
+    --gray: #A0A7B1;
+    --odd-row: #f6f9ff;
+    --th-background: #F4F5FC;
+    --gray-background: #EDEEF1;
+    --gray-mid: #F1F2F6;
+}
+
 * {
   font-family: "Handjet", cursive;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Titillium Web", sans-serif;
 }
 
+body {
+  margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 16px;
+    background-color:var(--background);
+}
+
 button {
-  background: #009435;
-  border: 1px solid #009435;
+  background: var(--gray);
+  border: 1px solid var(--primary);
 }
 
 .title {

@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">
-              <button class="btn-env" title="Añadir Persona">Añadir persona</button>
+              <button class="btn-env" title="Añadir Persona"><i class='bx bx-plus'></i> Añadir</button>
             </div>
           </div>
         </div>
@@ -130,9 +130,14 @@ export default {
   
   <style scoped>
 form {
-  margin-bottom: 2rem;
-  border: #07642e 1px solid;
   border-radius: 20px;
+    padding: 24px;
+    width: 768px;
+    max-width: 100%;
+    border: .5px solid rgb(190, 190, 190);
+    box-shadow: 0px 4px 16px 0px 
+        rgba(148, 156, 169, 0.15);
+    text-align: left;
 }
 
 .container {
@@ -143,14 +148,15 @@ input {
   border-radius: 20px;
 }
 .btn-env {
-  color: #07642e;
+  color: #000000;
   background: #fff;
   border-radius: 20px;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 .btn-env:hover {
-  background-color: #07642e;
+  background-color: #272727;
   color: #fff;
   border-radius: 20px;
 }
